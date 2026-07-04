@@ -8,11 +8,11 @@ NOTE: reference page numbers/DOIs should be verified in a reference manager befo
 
 **Running title:** Functionally benchmarking CSC marker-ranking methods
 
-**Authors:** [Author One]¹, [Author Two]¹
+**Authors:** Suma Kasa¹
 
-**Affiliations:** ¹[Department, Institution, City, Country]
+**Affiliations:** ¹Independent Researcher
 
-**Correspondence:** [name@institution]
+**Correspondence:** ksuma2109@gmail.com
 
 ---
 
@@ -160,11 +160,11 @@ Differential expression and transformer attention identify complementary CSC gen
 
 ## Data Availability Statement
 
-All datasets analyzed are publicly available. Primary breast cancer scRNA-seq: GEO GSE176078. Cross-cancer scRNA-seq: GSE84465 (GBM), GSE72056 (melanoma). Functional CSC assays (breast): GSE115302, GSE36643, GSE182532. Functional CSC assays (cross-cancer transfer): GSE270565 (prostate), GSE243840 (melanoma), GSE228203 (prostate), GSE232783 (ovarian), GSE166947 (bladder). Survival data: METABRIC (cBioPortal, study brca_metabric). The benchmarking framework is released as the `cscbench` Python package (MIT license); analysis code (`notebooks/phase_*.py`), the package, and derived result tables and figures are available at [repository URL].
+All datasets analyzed are publicly available. Primary breast cancer scRNA-seq: GEO GSE176078. Cross-cancer scRNA-seq: GSE84465 (GBM), GSE72056 (melanoma). Functional CSC assays (breast): GSE115302, GSE36643, GSE182532. Functional CSC assays (cross-cancer transfer): GSE270565 (prostate), GSE243840 (melanoma), GSE228203 (prostate), GSE232783 (ovarian), GSE166947 (bladder). Survival data: METABRIC (cBioPortal, study brca_metabric). The benchmarking framework is released as the `cscbench` Python package (MIT license); analysis code (`notebooks/phase_*.py`), the package, and derived result tables and figures are available at https://github.com/ksuma2109/csc-marker-benchmark (private during peer review; made publicly available upon publication).
 
 ## Author Contributions
 
-[AO] designed the study, implemented the pipeline and benchmark, and drafted the manuscript. [AT] [contributions]. All authors reviewed and approved the final manuscript.
+S.K. designed the study, implemented the pipeline, benchmark, and `cscbench` package, analyzed the data, and wrote the manuscript.
 
 ## Conflict of Interest
 

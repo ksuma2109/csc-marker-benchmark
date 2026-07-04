@@ -9,7 +9,7 @@ description = "Functional benchmarking of cancer stem cell marker-ranking method
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "Independent Researcher" }]
+authors = [{ name = "Suma Kasa", email = "ksuma2109@gmail.com" }]
 keywords = ["cancer stem cells", "benchmarking", "single-cell", "marker genes",
             "differential expression", "transformer attention"]
 dependencies = [
