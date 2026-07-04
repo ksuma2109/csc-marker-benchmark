@@ -1,0 +1,16 @@
+gene,mean_gene_effect,is_dependency,de_rank,gf_rank
+MYC,-1.755,True,1.0,26
+EGFR,-0.259,False,560.0,1999
+SOX9,-0.219,False,14.0,1
+EPCAM,-0.201,False,69.0,22
+CD44,-0.067,False,2.0,4
+KLK5,-0.053,False,474.0,34
+KLF4,-0.011,False,52.0,2
+BMPR1B,0.002,False,,14
+VIM,0.005,False,3.0,21
+OSMR,0.036,False,1104.0,71
+FN1,0.044,False,78.0,135
+FOXI1,0.078,False,2089.0,11
+FZD7,0.097,False,851.0,3
+ALDH1A3,0.158,False,1400.0,5
+SERPINE2,0.165,False,46.0,6

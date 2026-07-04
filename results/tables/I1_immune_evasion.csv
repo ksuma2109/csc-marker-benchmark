@@ -1,0 +1,3 @@
+program,spearman_r_vs_stemness,spearman_p,mean_csc_high,mean_csc_low,csc_high_minus_low,mw_p
+Antigen-presentation (MHC-I),0.257,0.0,0.656,0.191,0.464,9.537664345767299e-298
+Checkpoint ligands (PD-L1/L2/CD47),0.124,3.061664225209213e-84,-0.178,-0.23,0.052,5.858354490258575e-69

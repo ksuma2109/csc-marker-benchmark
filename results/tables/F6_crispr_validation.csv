@@ -1,0 +1,5 @@
+method,frac_dependency@100,random_frac,enrichment,p_value,mean_neg_effect@100,AUROC_essentiality,n_topk_in_gate
+Stage1_DE,0.33,0.0939,3.516,0.0,0.5576,0.5018,100
+Stage2_Geneformer,0.05,0.0939,0.533,0.961,0.088,0.6329,100
+LogReg,0.02,0.0939,0.213,1.0,0.0794,0.4749,100
+RandomForest,0.17,0.0939,1.811,0.008,0.2874,0.5768,100
