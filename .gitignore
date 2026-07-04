@@ -1,0 +1,39 @@
+# ── Large data (all public; see manuscript Data Availability for accessions) ──
+data/
+*.h5ad
+*.mtx
+*.loom
+*.tar
+*.tar.gz
+*.xls.gz
+*.csv.gz
+*.txt.gz
+
+# ── Model weights / training artifacts (large binaries) ──
+results/geneformer_finetuned/
+colab_results/
+CSC_Pipeline/
+geneformer_repo/
+*.safetensors
+*.pt
+*.arrow
+*.dataset/
+
+# ── Python environment / caches ──
+venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# ── OS / editor ──
+.DS_Store
+*.swp
+
+# ── Personal / tooling (not part of the scientific repository) ──
+MEMORY.md
+collaborators.md
+
+# ── Colab result archives ──
+*.zip

@@ -1,0 +1,96 @@
+gene_symbol,attention_rank,attention_score,surface_evidence,gene_name,uniprot,in_stage1_top200,in_consensus
+FZD7,3,3.8839340209960938,plasma membrane,frizzled class receptor 7,O75084,False,False
+CD44,4,3.536707534968296,"cell surface, extracellular exosome, extracellular space, membrane raft, plasma membrane",CD44 molecule (IN blood group),P16070,True,True
+ALDH1A3,5,2.998909890651703,extracellular exosome,aldehyde dehydrogenase 1 family member A3,P47895,False,False
+SERPINE2,6,2.9922173817952475,"extracellular matrix, extracellular space",serpin family E member 2,P07093,True,True
+GABRE,12,2.6650710105895996,plasma membrane,gamma-aminobutyric acid type A receptor subunit epsilon,P78334,False,False
+BMPR1B,14,2.592622756958008,plasma membrane,bone morphogenetic protein receptor type 1B,O00238,False,False
+MME,18,2.451850175857544,"cell surface, extracellular exosome, extracellular space, membrane raft, plasma membrane",membrane metalloendopeptidase,P08473,False,False
+SCNN1B,20,2.4298455715179443,"extracellular exosome, plasma membrane",sodium channel epithelial 1 subunit beta,P51168,False,False
+VIM,21,2.4287385064435294,"extracellular exosome, plasma membrane",vimentin,P08670,True,True
+EPCAM,22,2.4225806366829645,"cell surface, extracellular exosome, plasma membrane",epithelial cell adhesion molecule,P16422,True,True
+LY6K,25,2.400791664918264,"extracellular space, membrane raft, plasma membrane",lymphocyte antigen 6 family member K,Q17RY6,False,False
+EFS,27,2.37696905930837,plasma membrane,embryonal Fyn-associated substrate,O43281,False,False
+RAB4B,28,2.3212578296661377,plasma membrane,"RAB4B, member RAS oncogene family",P61018,False,False
+CALML5,29,2.3201118552436433,extracellular space,calmodulin like 5,Q9NZT1,False,False
+KLK5,34,2.263818989197413,extracellular space,kallikrein related peptidase 5,Q9Y337,False,False
+HYCC1,35,2.2500529289245605,plasma membrane,hyccin PI4KA lipid kinase complex subunit 1,Q9BYI3,False,False
+SLC34A2,39,2.2326934933662415,plasma membrane,solute carrier family 34 member 2,O95436,False,False
+VEPH1,41,2.208967407544454,plasma membrane,ventricular zone expressed PH domain containing 1,Q14D04,False,False
+STC2,42,2.1998682022094727,extracellular space,stanniocalcin 2,O76061,False,False
+ANGPT1,43,2.1932015419006348,"extracellular exosome, extracellular matrix, extracellular space, membrane raft, plasma membrane",angiopoietin 1,Q15389,False,False
+HUWE1,44,2.190678136689322,"extracellular exosome, extracellular space","HECT, UBA and WWE domain containing E3 ubiquitin protein ligase 1",Q7Z6Z7,False,False
+HLA-E,47,2.174866199493408,"cell surface, extracellular exosome, extracellular space, plasma membrane","major histocompatibility complex, class I, E",P13747,True,True
+EEF1A1,48,2.174203428937428,"extracellular exosome, extracellular space, plasma membrane",eukaryotic translation elongation factor 1 alpha 1,P68104,True,True
+LRIG3,49,2.143076539039612,"extracellular space, plasma membrane",leucine rich repeats and immunoglobulin like domains 3,Q6UXM1,False,False
+GAL,52,2.1211854979308726,extracellular space,galanin and GMAP prepropeptide,P22466,False,False
+ITM2C,53,2.1202827294667563,"extracellular exosome, plasma membrane",integral membrane protein 2C,Q9NQX7,False,False
+TSPAN15,63,2.050163023173809,"cell surface, plasma membrane",tetraspanin 15,O95858,False,False
+PABPC3,67,2.032223105430603,extracellular exosome,poly(A) binding protein cytoplasmic 3,Q9H361,False,False
+PRAME,69,1.997148164387407,plasma membrane,PRAME nuclear receptor transcriptional regulator,P78395,False,False
+OSMR,71,1.9869730472564695,plasma membrane,oncostatin M receptor,Q99650,False,False
+IFNAR2,75,1.9686068428887264,"extracellular space, plasma membrane",interferon alpha and beta receptor subunit 2,P48551,False,False
+SBSPON,76,1.9670420289039612,extracellular matrix,somatomedin B and thrombospondin type 1 domain containing,Q8IVN8,False,False
+LRRC3C,77,1.958627700805664,plasma membrane,leucine rich repeat containing 3C,A6NJW4,False,False
+SPARC,81,1.9469656149546304,"cell surface, extracellular matrix, extracellular space, plasma membrane",secreted protein acidic and cysteine rich,P09486,False,False
+TSPAN12,82,1.934892733891805,plasma membrane,tetraspanin 12,O95859,False,False
+PARVG,83,1.9281895160675049,plasma membrane,parvin gamma,Q9HBI0,False,False
+INHBB,84,1.9262989248548237,extracellular space,inhibin subunit beta B,P09529,False,False
+STK26,85,1.9135772287845612,extracellular exosome,serine/threonine kinase 26,Q9P289,False,False
+CPXM2,87,1.8958099842071536,extracellular space,"carboxypeptidase X, M14 family member 2",Q8N436,False,False
+KCNS3,90,1.8748409246143545,plasma membrane,potassium voltage-gated channel modifier subfamily S member 3,Q9BQ31,False,False
+MYO1B,91,1.8693119470889752,"extracellular exosome, plasma membrane",myosin IB,O43795,False,False
+TMSB4X,92,1.8675786410059247,extracellular space,thymosin beta 4 X-linked,P62328,False,False
+LOXL4,95,1.8462066650390625,"extracellular exosome, extracellular matrix, extracellular space",lysyl oxidase like 4,Q96JB6,False,False
+PRR4,97,1.845304012298584,extracellular space,proline rich 4,Q16378,False,False
+BMP7,103,1.8124357028440996,"extracellular matrix, extracellular space",bone morphogenetic protein 7,P18075,False,False
+RHEX,104,1.811720609664917,plasma membrane,regulator of hemoglobinization and erythroid cell expansion,Q6ZWK4,False,False
+NPNT,105,1.8088737726211548,"extracellular exosome, extracellular matrix, extracellular space",nephronectin,Q6UXI9,False,False
+SERBP1,108,1.8030591497818629,extracellular exosome,SERPINE1 mRNA binding protein 1,Q8NC51,True,True
+PPP3R1,109,1.8016950190067291,plasma membrane,"protein phosphatase 3 regulatory subunit B, alpha",P63098,False,False
+CD27,110,1.7938455939292908,"cell surface, extracellular space, plasma membrane",CD27 molecule,P26842,False,False
+PRSS8,112,1.7915099153393192,"extracellular exosome, extracellular space, plasma membrane",serine protease 8,Q16651,False,False
+ALDH3B1,114,1.789153814315796,"extracellular exosome, plasma membrane",aldehyde dehydrogenase 3 family member B1,P43353,False,False
+PLEKHG4B,115,1.7875502109527588,plasma membrane,pleckstrin homology and RhoGEF domain containing G4B,Q96PX9,False,False
+TSPAN6,117,1.7847944736480712,"extracellular exosome, plasma membrane",tetraspanin 6,O43657,False,False
+SLC6A14,119,1.7799652814865112,"extracellular exosome, plasma membrane",solute carrier family 6 member 14,Q9UN76,False,False
+SOSTDC1,120,1.7796123772859571,extracellular space,sclerostin domain containing 1,Q6X4U4,False,False
+MET,123,1.7735902070999146,"cell surface, extracellular space, plasma membrane","MET proto-oncogene, receptor tyrosine kinase",P08581,False,False
+MMP7,124,1.766285272205577,"extracellular exosome, extracellular matrix, extracellular space",matrix metallopeptidase 7,P09237,False,False
+FRZB,126,1.7615563869476318,extracellular space,frizzled related protein,Q92765,False,False
+SELENBP1,130,1.7532548546791076,"extracellular exosome, extracellular space",selenium binding protein 1,Q13228,False,False
+RAB25,131,1.752920043386825,"extracellular exosome, plasma membrane","RAB25, member RAS oncogene family",P57735,False,False
+DLL3,132,1.7512500882148745,plasma membrane,delta like canonical Notch ligand 3,Q9NYJ7,False,False
+FN1,135,1.7418036842346192,"extracellular exosome, extracellular matrix, extracellular space, plasma membrane",fibronectin 1,P02751,True,True
+CD40,138,1.7372617721557615,"cell surface, extracellular exosome, extracellular space, plasma membrane",CD40 molecule,P25942,False,False
+GPC2,144,1.7193949222564695,"cell surface, extracellular matrix, extracellular space, plasma membrane",glypican 2,Q8N158,False,False
+NINJ1,145,1.7179189305151663,"extracellular space, plasma membrane",ninjurin 1,Q92982,False,False
+H3-3B,147,1.7099868099797857,"extracellular exosome, extracellular space",H3.3 histone B,P84243,False,False
+ADGRG6,149,1.702151894569397,"cell surface, plasma membrane",adhesion G protein-coupled receptor G6,Q86SQ4,False,False
+ACSL5,150,1.7008695602416992,plasma membrane,acyl-CoA synthetase long chain family member 5,Q9ULC5,False,False
+RARRES2,151,1.6986396312713623,"extracellular matrix, extracellular space",retinoic acid receptor responder 2,Q99969,False,False
+GABRP,152,1.6975455348556103,plasma membrane,gamma-aminobutyric acid type A receptor subunit pi,O00591,False,False
+HOMER3,155,1.6927228371302288,plasma membrane,homer scaffold protein 3,Q9NSC5,False,False
+TMEM52B,157,1.688579559326172,extracellular exosome,transmembrane protein 52B,Q4KMG9,False,False
+GJB1,160,1.672569227218628,plasma membrane,gap junction protein beta 1,P08034,False,False
+GJA5,161,1.6696220636367798,plasma membrane,gap junction protein alpha 5,P36382,False,False
+C1QC,162,1.6688169240951538,"cell surface, extracellular matrix, extracellular space",complement C1q C chain,P02747,False,False
+DCD,163,1.662556290626526,"extracellular exosome, extracellular space",dermcidin,P81605,False,False
+EHD2,164,1.6574333906173706,"extracellular exosome, plasma membrane",EH domain containing 2,Q9NZN4,False,False
+IRF6,166,1.652487140893936,extracellular exosome,interferon regulatory factor 6,O14896,False,False
+PHGDH,169,1.6495580724601089,extracellular exosome,phosphoglycerate dehydrogenase,O43175,False,False
+KIF12,170,1.6485655903816223,extracellular exosome,kinesin family member 12,Q96FN5,False,False
+B2M,171,1.6457419565745763,"cell surface, extracellular exosome, extracellular space, plasma membrane",beta-2-microglobulin,P61769,True,True
+WNT7B,172,1.6402912855148315,"extracellular exosome, extracellular space, plasma membrane",Wnt family member 7B,P56706,False,False
+S100A6,173,1.6385853526492913,"extracellular exosome, extracellular matrix, extracellular space, plasma membrane",S100 calcium binding protein A6,P06703,True,True
+COL3A1,174,1.6346572637557983,"extracellular matrix, extracellular space",collagen type III alpha 1 chain,P02461,False,False
+ST3GAL3,175,1.6338239908218384,extracellular space,"ST3 beta-galactoside alpha-2,3-sialyltransferase 3",Q11203,False,False
+BIN1,176,1.6336778923869133,plasma membrane,bridging integrator 1,O00499,False,False
+PCBP2,178,1.6304052575971142,extracellular exosome,poly(rC) binding protein 2,Q15366,False,False
+NCMAP,179,1.6300017833709717,plasma membrane,non-compact myelin associated protein,Q5T1S8,False,False
+ARRDC2,180,1.6298012733459473,plasma membrane,arrestin domain containing 2,Q8TBH0,False,False
+AEBP1,186,1.6204676628112793,"extracellular exosome, extracellular matrix, extracellular space",AE binding protein 1,Q8IUX7,False,False
+LPAR2,188,1.6094801425933838,"cell surface, plasma membrane",lysophosphatidic acid receptor 2,Q9HBW0,False,False
+COL6A2,189,1.6067121028900146,"extracellular exosome, extracellular matrix, extracellular space, plasma membrane",collagen type VI alpha 2 chain,P12110,False,False
+PSD4,192,1.5983060598373413,plasma membrane,pleckstrin and Sec7 domain containing 4,Q8NDX1,False,False
+SDC1,196,1.5886936894917891,"cell surface, extracellular exosome, extracellular space, plasma membrane",syndecan 1,P18827,False,False

@@ -1,0 +1,2 @@
+status,reason,n_cancer_epi_with_protein,conclusion
+INVALID — insufficient data,"CITE-seq ADT captured immune/stromal cells, not malignant epithelium; only 7/2169 cancer-epithelial cells had matched protein data",7,Per-cell protein CSC benchmark infeasible with GSE176078; F1 bulk benchmark stands
