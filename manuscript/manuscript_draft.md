@@ -30,6 +30,15 @@ NOTE: reference page numbers/DOIs should be verified in a reference manager befo
 
 ---
 
+## Key Points
+
+- Computational cancer stem cell (CSC) marker discovery is evaluated circularly; we introduce a reusable, label-independent framework that scores any gene-ranking method against independent functional CSC assays (sorted ALDH⁺, CD44⁺CD24⁻, CD133⁺ populations and sphere self-renewal).
+- Differential expression and transformer attention are complementary: differential expression produces higher-precision marker shortlists, whereas transformer attention is a stronger genome-wide ranker; comparison against supervised linear and nonlinear baselines shows the transformer's advantage derives from pretraining rather than supervision alone.
+- CSC marker rankings are substantially tissue-specific and transfer only weakly across tumor types, so the framework and its method-selection guidance are best applied per cancer.
+- The framework is released as an installable, tested Python package (`cscbench`), together with a four-method comparison and a prioritized, pathway-annotated CSC candidate list.
+
+---
+
 ## 1. Introduction
 
 Cancer stem cells (CSCs) are a minority tumor subpopulation capable of self-renewal, multilineage differentiation, and tumor initiation, and are implicated in metastasis, relapse, and treatment resistance (Reya et al., 2001; Batlle and Clevers, 2017). Their identification is hampered by two persistent problems. First, canonical markers such as CD44, CD133, and ALDH1A1 are not universal across patients or tumor types, limiting the transferability of fixed marker panels (Al-Hajj et al., 2003). Second, CSC identity is increasingly recognized as a dynamic, plastic transcriptional state rather than a fixed marker-defined population, which single-gene scoring captures poorly.
@@ -176,7 +185,11 @@ The authors declare that the research was conducted in the absence of any commer
 
 ## Acknowledgments
 
-The authors thank the contributors of the public datasets used in this study.
+The author thanks the contributors of the public datasets used in this study.
+
+## Author Biography
+
+**Suma Kasa** is an independent researcher in computational biology and bioinformatics, with interests in single-cell genomics, cancer stem cell biology, and machine-learning methods for gene prioritization.
 
 ---
 

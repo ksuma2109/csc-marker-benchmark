@@ -14,8 +14,25 @@ text = open(MD).read()
 # strip the leading HTML comment block (editor note)
 text = re.sub(r"^<!--.*?-->\s*", "", text, count=1, flags=re.DOTALL)
 
-# convert body markdown -> html
-body = markdown.markdown(text, extensions=["tables", "sane_lists", "attr_list"])
+# Split into full-width front matter (title..Key Points) and two-column body
+# (Introduction onward), Oxford/Briefings-in-Bioinformatics style.
+MD_EXT = ["tables", "sane_lists", "attr_list"]
+split_marker = "## 1. Introduction"
+if split_marker in text:
+    front_md, body_md = text.split(split_marker, 1)
+    body_md = split_marker + body_md
+else:
+    front_md, body_md = text, ""
+front = markdown.markdown(front_md, extensions=MD_EXT)
+body  = markdown.markdown(body_md,  extensions=MD_EXT)
+
+# Center only the title block (running title / authors / affiliation / correspondence):
+# everything between the </h1> and the first horizontal rule.
+front = re.sub(r"(</h1>)(.*?)(<hr\s*/?>)",
+               r'\1<div class="titleblock">\2</div>\3', front, count=1, flags=re.DOTALL)
+# Box the Key Points list (a Briefings in Bioinformatics requirement)
+front = re.sub(r"(<h2>Key Points</h2>\s*<ul>.*?</ul>)",
+               r'<div class="keypoints">\1</div>', front, flags=re.DOTALL)
 
 # figure captions (match the composite figures produced)
 FIGURES = [
@@ -53,32 +70,65 @@ for fname, num, cap in FIGURES:
 fig_html = "\n".join(fig_html)
 
 CSS = """
-@page { size: A4; margin: 2cm 2.2cm; @bottom-center { content: counter(page);
-        font-family: Georgia, serif; font-size: 9pt; color:#666; } }
-body { font-family: Georgia, 'Times New Roman', serif; font-size: 10.5pt;
-       line-height: 1.5; color:#1a1a1a; text-align: justify; }
-h1 { font-size: 17pt; text-align:center; line-height:1.3; margin: 0 0 4pt 0;
-     font-family: 'Helvetica Neue', Arial, sans-serif; }
-h2 { font-size: 12.5pt; margin: 16pt 0 4pt 0; border-bottom:1px solid #ccc;
-     padding-bottom:2pt; font-family:'Helvetica Neue', Arial, sans-serif; }
-h3 { font-size: 11pt; margin: 12pt 0 3pt 0; color:#222;
-     font-family:'Helvetica Neue', Arial, sans-serif; }
-p { margin: 0 0 7pt 0; }
+@page { size: A4; margin: 1.6cm 1.5cm;
+        @bottom-center { content: counter(page);
+            font-family: 'Times New Roman', serif; font-size: 8.5pt; color:#666; } }
+body { font-family: 'Times New Roman', Georgia, serif; font-size: 9.5pt;
+       line-height: 1.42; color:#111; text-align: justify; }
+
+/* ── Full-width front matter ── */
+.front { }
+h1 { font-size: 18pt; text-align:center; line-height:1.28; margin: 0 0 6pt 0;
+     font-family: 'Helvetica Neue', Arial, sans-serif; font-weight:700; }
+.front p { margin: 3pt 0; text-align:justify; }   /* abstract/keywords justified */
+.titleblock { text-align:center; margin: 2pt 0 0; }
+.titleblock p { text-align:center; margin: 2pt 0; }
+.front h2 { font-size: 11pt; text-transform:uppercase; letter-spacing:0.4pt;
+     margin: 12pt 0 3pt 0; font-family:'Helvetica Neue', Arial, sans-serif;
+     color:#333; text-align:left; }
+.front hr { border:none; border-top:1px solid #ccc; margin:8pt 0; }
+
+/* Key Points box (Briefings in Bioinformatics requirement) */
+.keypoints { border:1px solid #4a6785; background:#eef3f8; border-radius:4px;
+     padding:8pt 12pt 6pt; margin:10pt 0; break-inside: avoid; }
+.keypoints h2 { margin-top:0; color:#274763; border:none; }
+.keypoints ul { margin:0; padding-left:16pt; }
+.keypoints li { margin-bottom:4pt; text-align:justify; }
+
+/* ── Two-column body (Oxford / BiB article style) ── */
+.body { column-count: 2; column-gap: 0.7cm; column-fill: auto; }
+.body h2 { font-size: 10.5pt; margin: 11pt 0 3pt 0; break-after: avoid;
+     font-family:'Helvetica Neue', Arial, sans-serif; color:#1a3a5c; }
+.body h3 { font-size: 9.8pt; margin: 8pt 0 2pt 0; break-after: avoid;
+     font-family:'Helvetica Neue', Arial, sans-serif; color:#222; font-style:italic; }
+.body p { margin: 0 0 5pt 0; }
+.body hr { display:none; }
+
+/* Tables span both columns */
+.body table, table { border-collapse: collapse; width:100%; font-size:8.3pt;
+     margin:6pt 0; column-span: all; break-inside: avoid; }
+th,td { border:1px solid #bbb; padding:2.5pt 4pt; text-align:left; }
+th { background:#e8eef4; }
+
 strong { color:#000; }
-hr { border:none; border-top:1px solid #ddd; margin:10pt 0; }
-em { color:#333; }
-table { border-collapse: collapse; width:100%; font-size:9.5pt; margin:8pt 0; }
-th,td { border:1px solid #bbb; padding:3pt 5pt; text-align:left; }
-th { background:#f0f0f0; }
-code { font-family: 'Courier New', monospace; font-size:9pt; background:#f5f5f5; padding:0 2pt; }
-figure { margin: 14pt 0; page-break-inside: avoid; text-align:center; }
-figure img { max-width: 100%; height:auto; border:1px solid #e0e0e0; }
-figcaption { font-size: 9pt; text-align:justify; margin-top:5pt; color:#333; line-height:1.4; }
-.figures-header { page-break-before: always; }
+em { color:#222; }
+code { font-family: 'Courier New', monospace; font-size:8.3pt;
+       background:#f4f4f4; padding:0 2pt; }
+
+/* ── Figures: full page width after the body ── */
+.figures-header { break-before: page; font-size: 12pt; text-transform:uppercase;
+     letter-spacing:0.5pt; font-family:'Helvetica Neue', Arial, sans-serif; }
+figure { margin: 12pt 0; break-inside: avoid; text-align:center; }
+figure img { max-width: 100%; height:auto; border:1px solid #ddd; }
+figcaption { font-size: 8.5pt; text-align:justify; margin-top:4pt; color:#222;
+     line-height:1.35; }
 """
 
 html = f"""<!doctype html><html><head><meta charset="utf-8">
-<style>{CSS}</style></head><body>{body}{fig_html}</body></html>"""
+<style>{CSS}</style></head><body>
+<div class="front">{front}</div>
+<div class="body">{body}</div>
+{fig_html}</body></html>"""
 
 HTML(string=html, base_url=ROOT).write_pdf(OUT)
 sz = os.path.getsize(OUT) / 1024
