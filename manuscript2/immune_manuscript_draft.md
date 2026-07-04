@@ -18,7 +18,7 @@ STATUS: draft scaffold — needs independent-cohort validation before submission
 
 **Methods.** Using the Wu et al. breast atlas (GSE176078; 100,064 cells, 26 patients), Visium spatial transcriptomics (6 sections), and CITE-seq surface protein, we scored malignant-cell stemness and related it to antigen-presentation machinery, an expanded panel of tumour-intrinsic immune-evasion ligands, T-cell infiltration/exhaustion, and spatial T-cell co-localization. All cell-level associations were re-tested within molecular subtype.
 
-**Results.** CSC state did not fit any classic evasion model. CSC-high malignant cells **retained** (even elevated) classical MHC-I antigen presentation; tumour stemness was uncorrelated with T-cell infiltration; and spatial analysis showed no consistent CSC–T-cell exclusion (mean per-spot r≈+0.06 across sections). PD-L1 was essentially unchanged in CSCs. Instead, a per-ligand analysis nominated **innate-immune** checkpoints — **CD47** (anti-macrophage) and **HLA-E** (anti-NK) — as the CSC-associated axis. Subtype stratification showed this phenotype is **specific to triple-negative (and, weakly, HER2+) breast cancer**: within TNBC, CSC-high cells upregulated CD47 (r=+0.23) and HLA-E (r=+0.27) and retained MHC-I (r=+0.35), whereas in luminal (ER+) tumours MHC-I showed no association and CD47 reversed. An RNA exhaustion signature was cross-validated at the protein level (CITE-seq).
+**Results.** CSC state did not fit any classic evasion model. CSC-high malignant cells **retained** (even elevated) classical MHC-I antigen presentation; tumour stemness was uncorrelated with T-cell infiltration; and spatial analysis showed no consistent CSC–T-cell exclusion (mean per-spot r≈+0.06 across sections). PD-L1 was essentially unchanged in CSCs. Instead, a per-ligand analysis nominated **innate-immune** checkpoints — **CD47** (anti-macrophage) and **HLA-E** (anti-NK) — as the CSC-associated axis. Subtype stratification showed this phenotype is **specific to triple-negative (and, weakly, HER2+) breast cancer**: within TNBC, CSC-high cells upregulated CD47 (r=+0.23) and HLA-E (r=+0.27) and retained MHC-I (r=+0.35), whereas in luminal (ER+) tumours MHC-I showed no association and CD47 reversed. An RNA exhaustion signature was cross-validated at the protein level (CITE-seq). Critically, the two core findings — **CD47 upregulation (4/4 tumours) and MHC-I retention (3/4)** in TNBC CSCs — **replicated in an independent TNBC cohort** (Pal et al. 2021, GSE161529); HLA-E replicated only partially (2/4) and is treated as secondary.
 
 **Conclusions.** Breast CSCs are not defeated by antigen-presentation loss and are not immune-cold; rather, TNBC CSCs engage innate-immune evasion (CD47/HLA-E) while remaining T-cell-visible. This nominates innate-immune combination partners — anti-CD47 (magrolimab) and anti-NKG2A (monalizumab) — over anti-PD-1 for CSC-directed immunotherapy in triple-negative breast cancer.
 
@@ -50,7 +50,9 @@ scRNA-seq GSE176078; Visium Zenodo 4739739; CITE-seq SCP1039. Analysis code: `no
 
 ---
 ## Development checklist before submission
-- [ ] Independent-cohort validation of the TNBC CSC → CD47/HLA-E finding (external TNBC scRNA-seq).
-- [ ] Macrophage-niche analysis: are CSC-high TNBC regions macrophage-rich / phagocytosis-suppressed (spatial CD47–SIRPA / macrophage co-localization)?
-- [ ] Explicit subtype-matched figures (main figure = TNBC).
+- [x] Independent-cohort validation (Pal 2021 / GSE161529): CD47 replicates 4/4, MHC-I 3/4, HLA-E 2/4 (I7).
+- [x] Macrophage-niche analysis (I6): NOT robustly supported at Visium resolution — reported as a limitation, not a claim.
+- [ ] Lead framing on **CD47** (most robust, replicated); demote HLA-E to secondary; soften PD-L1 claim to "weaker than CD47," not "absent."
+- [ ] Explicit subtype-matched figures (main figure = TNBC; discovery + validation side by side).
+- [ ] Consider a further independent cohort (Bassez 2021 BIOKEY pre-treatment, or Gao 2020 GSE148673) to strengthen replication.
 - [ ] References; full Methods; format for target journal.

@@ -57,6 +57,29 @@ TNBC is both the most stem-like and most immunogenic subtype, so the cell-level 
 - The associations are **subtype-dependent, not subtype-artifacts**: MHC-I retention and CD47 upregulation hold **within TNBC and HER2+** but vanish (MHC-I) or reverse (CD47) in ER+.
 - **Refined claim:** CSC innate immune evasion (CD47/HLA-E up, MHC-I retained) is a feature of **TNBC (and HER2+) CSCs, not luminal CSCs** — more specific and more defensible than a pan-breast statement, and biologically coherent (TNBC is the most stem-like/aggressive subtype).
 
+## I6 — Spatial CSC–macrophage–CD47 niche (TNBC Visium) — NOT robustly supported
+Tested whether the cell-intrinsic CD47 upregulation (I4/I5) manifests as CSC-high regions sitting in macrophage-rich, CD47-high (phagocytosis-suppressed) niches, across the 4 TNBC Visium sections:
+- stemness~macrophage co-localization: positive in only **2/4** sections (mean r=+0.10); a clear signal in just one section (CID44971, r=+0.35, niche macrophage-enrichment p=5e-6); null in the others.
+- stemness~CD47 spatial correlation is very weak (mean r=+0.03).
+- **Conclusion:** the CD47 upregulation is a robust *cell-intrinsic* property of TNBC CSCs (I4/I5), but there is **no robust spatial evidence** that CSCs occupy macrophage niches at Visium (~55 µm, ~10-cell) resolution. The downstream macrophage-interaction consequence is therefore *not* established here — it would require a functional phagocytosis assay (wet lab). Reported as a limitation, not a positive finding.
+
+## I7 — Independent-cohort validation (Pal 2021 / GSE161529) — KEY RESULT
+Tested whether the within-TNBC discovery findings replicate in an independent cohort (Pal et al. 2021, Visvader lab; 4 treatment-naive sporadic TNBC; malignant cells gated by epithelial markers). Per-cell Spearman of program vs stemness within malignant cells:
+
+| Finding | Discovery (Wu 2021) | Validation (Pal 2021, mean r) | Tumours consistent |
+|---|---|---|---|
+| **CD47 upregulation** | + | **+0.11** | **4/4** ✅ |
+| MHC-I retention | + | +0.14 | 3/4 ✅ |
+| HLA-E | + | +0.09 | 2/4 ⚠ (weaker) |
+| PD-L1 | ~0 | +0.07 | (weakly positive) |
+
+- **The two core claims replicate independently:** CD47 upregulation in TNBC CSCs (4/4 tumours) and MHC-I retention (3/4). CD47 — the headline innate-evasion finding and therapeutic nomination — is the most robust.
+- **HLA-E replicates only partially (2/4)** → demote to a secondary signal; lead with CD47.
+- **PD-L1 is weakly positive (+0.07), not strictly null** → soften "PD-1 is not the axis" to "PD-L1 is weaker than CD47."
+- Effect sizes modest (r≈0.1–0.3, matching discovery); heterogeneous across tumours. Malignant cells gated by markers (not CNV) — validation-grade.
+
+**Bottom line:** the second paper's core is now **independently replicated** — TNBC CSCs retain antigen presentation and upregulate CD47.
+
 ## I3 — Protein cross-validation (CITE-seq)
 Validates the I1 RNA exhaustion signature at the protein level in T-cells (ADT: PD-1, CTLA-4, TIGIT, LAG-3, TIM-3):
 - RNA vs protein exhaustion correlate positively in 3/4 tumour samples; **significant in both well-powered samples** (CID3838 n=1351, r=+0.20; CID4515 n=419, r=+0.41).
