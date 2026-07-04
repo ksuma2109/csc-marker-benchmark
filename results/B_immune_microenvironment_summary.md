@@ -4,8 +4,8 @@
 **Data:** GSE176078 breast atlas — scRNA-seq (100k cells, 26 patients), Visium spatial (6 sections, Zenodo 4739739), CITE-seq immune protein (SCP1039).
 **Scripts:** `notebooks/phase_I1_immune_evasion.py`, `phase_I2_spatial_exclusion.py`, `phase_I3_protein_exhaustion.py`.
 
-## Overall conclusion
-**Across three independent analyses (transcriptomic, spatial, and protein), CSC state is NOT associated with a consistent immune-evasion phenotype in this breast cancer cohort.** The naive models — CSCs are immune-cold, downregulate MHC-I, or spatially exclude T-cells — are not supported. The only evasion-consistent signal is a weak upregulation of checkpoint ligands. This is a coherent, honest negative/nuanced result.
+## Overall conclusion (subtype-aware)
+The naive immune-evasion models — CSCs are immune-cold, downregulate MHC-I, spatially exclude T-cells, or rely on PD-1/PD-L1 — are **not** supported in any subtype. Instead, **subtype-stratified analysis (I5) reveals a TNBC-specific phenotype**: in triple-negative (and, more weakly, HER2+) breast cancer, CSC-high malignant cells **retain MHC-I antigen presentation** (so remain T-cell-visible) while **upregulating the innate-immune evasion ligands CD47 (anti-macrophage) and HLA-E (anti-NK)**. In luminal (ER+) tumors this is absent — MHC-I shows no CSC association and CD47 even reverses. The story is therefore **CSC innate immune evasion is a subtype-specific (TNBC) phenomenon**, not a pan-breast one.
 
 ---
 
@@ -43,6 +43,19 @@ Breaking the I1 combined checkpoint score into individual tumour-intrinsic evasi
 - **Sanity check passes:** CD24 is *down* in CSC-high cells (−0.29), as required by the CD44⁺CD24⁻/low definition — validating the stemness labelling. Note the nuance: losing CD24 (itself a "don't-eat-me" Siglec-10 ligand) would make CSCs *more* phagocytosable, partly opposing their CD47 upregulation.
 
 **Interpretation:** in breast cancer, CSC immune modulation operates through **innate-immune evasion (CD47/macrophage, HLA-E/NK)** rather than the T-cell PD-1 axis. Effect sizes are small (except HLA-E), correlational, and subtype-confounded.
+
+## I5 — Subtype-stratified robustness (the critical confound check)
+TNBC is both the most stem-like and most immunogenic subtype, so the cell-level findings were tested **within** each subtype (Spearman of score vs stemness):
+
+| Signal | ER+ | TNBC | HER2+ | Robust? |
+|---|---|---|---|---|
+| MHC-I antigen presentation | +0.00 (ns) | **+0.35*** | +0.24*** | TNBC/HER2+ (not ER+) |
+| CD47 | −0.05*** (reverses) | **+0.23*** | +0.11*** | TNBC/HER2+ (opposite in ER+) |
+| HLA-E | +0.09*** | +0.27*** | +0.24*** | all subtypes (⚠ CSC-consensus gene) |
+| PD-L1 | ns | +0.07*** | ns | not the axis anywhere |
+
+- The associations are **subtype-dependent, not subtype-artifacts**: MHC-I retention and CD47 upregulation hold **within TNBC and HER2+** but vanish (MHC-I) or reverse (CD47) in ER+.
+- **Refined claim:** CSC innate immune evasion (CD47/HLA-E up, MHC-I retained) is a feature of **TNBC (and HER2+) CSCs, not luminal CSCs** — more specific and more defensible than a pan-breast statement, and biologically coherent (TNBC is the most stem-like/aggressive subtype).
 
 ## I3 — Protein cross-validation (CITE-seq)
 Validates the I1 RNA exhaustion signature at the protein level in T-cells (ADT: PD-1, CTLA-4, TIGIT, LAG-3, TIM-3):
