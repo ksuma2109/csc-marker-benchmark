@@ -31,9 +31,12 @@ bioRxiv takes a single complete manuscript **PDF** (or Word). No journal templat
 5. **Funding:** "No external funding" (matches).
 6. **Author confirmation:** you affirm you have the right to post and it isn't already published.
 
-## Two things to reconcile before posting
-1. **Repository link.** Both manuscripts cite `https://github.com/ksuma2109/csc-marker-benchmark` and say "private during peer review." For a **preprint the repo should be reachable** — either make it public now, or archive a snapshot on **Zenodo** (mints a DOI, ideal to cite) and point to that. Update the Data Availability wording to match ("available at …" without "private").
-2. **References.** I supplied accurate author/year/title/journal, but **verify volume/page/DOIs** in a reference manager — do this before posting (a preprint is public and citable).
+## Pre-posting status — all resolved
+1. ✅ **Repository** — public and reachable at https://github.com/ksuma2109/csc-marker-benchmark; Data Availability wording updated to "openly available."
+2. ✅ **References** — verified against PubMed (24/25 correct; the one title error fixed).
+3. ✅ **ORCID** — 0009-0001-3253-6972, in both manuscripts; link the same iD on the portal.
+
+*(Optional, not required: archive a fixed repo snapshot on Zenodo for a citable DOI.)*
 
 ## Notes
 - The **two-column BiB PDF** (manuscript/CSC_manuscript.pdf) is for *journal* submission, not bioRxiv — use the single-column bioRxiv PDFs above for the preprint.

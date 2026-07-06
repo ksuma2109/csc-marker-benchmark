@@ -171,7 +171,7 @@ Differential expression and transformer attention identify complementary CSC gen
 
 ## Data Availability Statement
 
-All datasets analyzed are publicly available. Primary breast cancer scRNA-seq: GEO GSE176078. Cross-cancer scRNA-seq: GSE84465 (GBM), GSE72056 (melanoma). Functional CSC assays (breast): GSE115302, GSE36643, GSE182532. Functional CSC assays (cross-cancer transfer): GSE270565 (prostate), GSE243840 (melanoma), GSE228203 (prostate), GSE232783 (ovarian), GSE166947 (bladder). Survival data: METABRIC (cBioPortal, study brca_metabric). The benchmarking framework is released as the `cscbench` Python package (MIT license); analysis code (`notebooks/phase_*.py`), the package, and derived result tables and figures are available at https://github.com/ksuma2109/csc-marker-benchmark (private during peer review; made publicly available upon publication).
+All datasets analyzed are publicly available. Primary breast cancer scRNA-seq: GEO GSE176078. Cross-cancer scRNA-seq: GSE84465 (GBM), GSE72056 (melanoma). Functional CSC assays (breast): GSE115302, GSE36643, GSE182532. Functional CSC assays (cross-cancer transfer): GSE270565 (prostate), GSE243840 (melanoma), GSE228203 (prostate), GSE232783 (ovarian), GSE166947 (bladder). Survival data: METABRIC (cBioPortal, study brca_metabric). The benchmarking framework is released as the `cscbench` Python package (MIT license); analysis code (`notebooks/phase_*.py`), the package, and derived result tables and figures are openly available at https://github.com/ksuma2109/csc-marker-benchmark.
 
 ## Author Contributions
 

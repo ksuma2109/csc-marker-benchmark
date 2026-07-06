@@ -102,7 +102,7 @@ TNBC cancer stem cells retain antigen presentation and upregulate the innate-imm
 ---
 
 ## Data & Code Availability
-scRNA-seq: GSE176078 (discovery), GSE161529 and GSE148673 (validation). Spatial: Zenodo 4739739. CITE-seq: Single Cell Portal SCP1039. Analysis code (`notebooks/phase_I1–I9.py`), result tables, and figures are available at https://github.com/ksuma2109/csc-marker-benchmark (private during peer review; public upon publication).
+scRNA-seq: GSE176078 (discovery), GSE161529 and GSE148673 (validation). Spatial: Zenodo 4739739. CITE-seq: Single Cell Portal SCP1039. Analysis code (`notebooks/phase_I1–I9.py`), result tables, and figures are openly available at https://github.com/ksuma2109/csc-marker-benchmark.
 
 ## Author Contributions
 S.K. designed the study, performed all analyses, and wrote the manuscript.
