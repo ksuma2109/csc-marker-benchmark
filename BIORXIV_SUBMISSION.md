@@ -2,14 +2,21 @@
 
 Both manuscripts are now in bioRxiv-appropriate format: clean **single-column PDFs** with all elements bioRxiv requires.
 
-## Files to upload
+## Files to upload — both bioRxiv-accepted formats provided
 
-| Paper | bioRxiv PDF | Figures (upload separately too) |
-|---|---|---|
-| 1 — CSC marker benchmark | [manuscript/CSC_marker_benchmark_bioRxiv.pdf](manuscript/CSC_marker_benchmark_bioRxiv.pdf) | manuscript/figures/Figure1–5.png |
-| 2 — TNBC CSC → CD47 | [manuscript2/CSC_immune_bioRxiv.pdf](manuscript2/CSC_immune_bioRxiv.pdf) | manuscript2/figures/Figure1.png |
+bioRxiv accepts the manuscript as **PDF or Word (.docx)** — both are now built. Upload ONE manuscript file plus the figure files.
 
-Each PDF is self-contained (title, author, affiliation, corresponding author + email, abstract, full text, figures with legends, data availability, author contributions, competing interests, funding, references).
+**Paper 1 — CSC marker benchmark**
+- Manuscript (choose one): [PDF](manuscript/CSC_marker_benchmark_bioRxiv.pdf) (single-column preprint) · [Word .docx](manuscript/CSC_marker_benchmark.docx) (editable)
+- Figures (separate files): manuscript/figures/Figure1.png … Figure5.png
+
+**Paper 2 — TNBC CSC → CD47**
+- Manuscript (choose one): [PDF](manuscript2/CSC_immune_bioRxiv.pdf) · [Word .docx](manuscript2/CSC_immune.docx)
+- Figure (separate file): manuscript2/figures/Figure1.png
+
+Each manuscript file is self-contained (title, author, affiliation, corresponding author + email, abstract, full text, figures with legends, data availability, author contributions, competing interests, funding, references). Figures are ~2,000 px wide (adequate resolution; re-export at 300 dpi if a specific journal later requires it).
+
+**Which format to use:** the **PDF** is the simplest one-file upload and renders exactly as designed. The **.docx** is useful if you want to make final edits (add your ORCID, tweak wording, adjust the repo link) before submitting — bioRxiv accepts either.
 
 ## bioRxiv accepts this format
 bioRxiv takes a single complete manuscript **PDF** (or Word). No journal template, no specific reference style, and no line numbers are required. Figures may be embedded (they are) and/or uploaded as separate files (recommended, ≥300 dpi — regenerate if needed).
