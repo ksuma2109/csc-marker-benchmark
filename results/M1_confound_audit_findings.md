@@ -46,7 +46,29 @@ This **quantifies** caveats already stated qualitatively in both manuscripts:
 ## Verdict for the MI project
 **PROCEED** to M2 (causal localization) / M3 (feature discovery) — the model has a distinct, non-confounded stemness component worth reverse-engineering. But any downstream MI claim must be read against the substantial subtype/proliferation confounding documented here.
 
-## Caveats
+## Caveats (confound audit)
 - Linear probes only (nonlinear structure not tested); [CLS]-pooled representation.
 - Uses checkpoint-918 (epoch 1, F1 92.95%), not the best checkpoint-3676 (on Drive) — results expected to be similar.
 - "Stemness" = signature-derived label; confound audit bounds interpretation but does not make it causal.
+
+---
+
+# M1b — Integrated-gradients attribution vs. attention (does the rigorous method reorder Paper 1's ranking?)
+
+**Script:** `notebooks/phase_M1b_attribution.py` · **Outputs:** `results/tables/M1b_ig_attribution.csv`, `results/figures/M1b_ig_vs_attention.png`.
+Integrated gradients (IG) of the CSC-high logit w.r.t. input gene-token embeddings, aggregated over 150 CSC-high held-out cells → a gradient-based gene-importance ranking, compared to Paper 1's attention ranking.
+
+## Key result
+- **IG top genes:** KLF4, CD44, MYC, FN1, VIM, SOX9, EPCAM, LIN28B, ERBB3, TFAP2C, …
+- **IG vs attention:** Spearman ρ = **0.33**; **top-50 overlap only 7/50** — the two rankings substantially disagree.
+
+## Interpretation — attention is partly unreliable; the robust core survives
+- **Both methods (and the functional benchmark) agree on the core** — KLF4, CD44, MYC, SOX9, VIM, FN1, EPCAM are in IG's top-15. These are genuinely model-important and robust across methods.
+- **Attention-*unique* candidates are NOT corroborated by IG** — **FZD7 (attention #3), BMPR1B, ALDH1A3, FOXI1** are all absent from IG's top-50. This is the classic "attention ≠ explanation" effect: a more principled attribution reorders the ranking beyond the top consensus.
+- **FZD7 specifically:** attention #3, but weak functional validation (+0.06 in F1) *and* absent from IG top-50 → three independent lines now indicate **FZD7 was likely an attention artifact**, not a robust model-important gene.
+
+## Implication for Paper 1 (honest)
+Paper 1's Geneformer contribution is reliable for its **consensus/core** genes but its **attention-unique novel candidates** (notably FZD7) are **less robust than the attention ranking implies**. Paper 1 already hedges these as "prioritized hypotheses" and reports FZD7's weak functional validation, so it does not overclaim — but a one-sentence caveat noting that a gradient-based attribution does not corroborate the attention-unique candidates would strengthen its honesty. Optional; not required, as the paper does not assert FZD7 as validated.
+
+## Caveats (attribution)
+- IG on 150 cells, n_steps=20, [embedding-layer] attribution; abs-value aggregation. IG reveals genes the MODEL relies on, not biological cause.
