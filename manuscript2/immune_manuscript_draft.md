@@ -12,6 +12,8 @@ Figures: manuscript2/figures/. Analyses: notebooks/phase_I1-I9.
 
 **Affiliation:** ¹Independent Researcher
 
+**ORCID:** 0009-0001-3253-6972
+
 **Correspondence:** ksuma2109@gmail.com
 
 **Running title:** CD47 innate immune evasion by TNBC cancer stem cells

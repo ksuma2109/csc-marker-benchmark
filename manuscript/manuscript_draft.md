@@ -12,6 +12,8 @@ NOTE: reference page numbers/DOIs should be verified in a reference manager befo
 
 **Affiliations:** ¹Independent Researcher
 
+**ORCID:** 0009-0001-3253-6972
+
 **Correspondence:** ksuma2109@gmail.com
 
 ---
